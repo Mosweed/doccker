@@ -49,7 +49,7 @@ jobs:
       #   run: ./vendor/bin/pest
 
       - name: Build Docker image
-        run: docker build --tag yazansweed/yazandocker:latest .
+        run: docker build --tag yazansweed/yazandocker:latest.
 
       - uses: docker/login-action@v3
         name: Dockerhub Login
