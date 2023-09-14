@@ -18,6 +18,6 @@ COPY . .
 RUN composer install
 
 #Expose port 9000 and start PHP-FPM server
-EXPOSE 8000
+EXPOSE 8001
 CMD ["php","artisan","serve","--host=0.0.0.0"]
 
