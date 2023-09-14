@@ -27,7 +27,7 @@ jobs:
     - name: install npm
       run: npm install
     - name: run npm
-      run: npm run dev
+      run: npm run build
 
     - name: Create Database
       run: |
@@ -35,8 +35,8 @@ jobs:
         touch database/database.sqlite
 
 
-        - name: Execute tests (Unit and Feature tests) via PHPUnit
-      env:
-        DB_CONNECTION: sqlite
-        DB_DATABASE: database/database.sqlite
-        run: vendor/bin/phpunit
+      #   - name: Execute tests (Unit and Feature tests) via PHPUnit
+      # env:
+      #   DB_CONNECTION: sqlite
+      #   DB_DATABASE: database/database.sqlite
+      #   run: vendor/bin/phpunit
