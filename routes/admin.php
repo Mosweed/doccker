@@ -31,7 +31,7 @@ Route::middleware(['auth', 'user-role:admin'])->group(function () {
 
     Route::get('order_generate-pdf/{order}', [PDFController::class, 'index'])->name('order_generate-pdf');
 
-    Route::get('/myorders', [MyordersController::class, 'index'])->name('myorders');
+   // Route::get('/myorders', [MyordersController::class, 'index'])->name('myorders');
 
     Route::get('/myorders/{id}', [MyordersController::class, 'show'])->name('myorders.show');
 
